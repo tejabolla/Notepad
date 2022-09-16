@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(65, 53, 52);
+    background-image: url("paper-notepad-500x500.jpg" );
+}
+.c{
+    /* background-image: url('https://mcdn.wallpapersafari.com/medium/37/33/rS8nG0.jpg'); */
+    background-color: rgb(65,53,52);
+    /* background-size: cover; */
+     /*it sets the body into left alignment i.e book image, notepad and input*/
+    /*text-align: right;                  */
+    opacity: 80;
+}
+/* below class is for the input of title and delete title */
+.titl{
+    background-color: rgb(249, 252, 255);  
+    width: 25vw;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    /* border-radius: 30px; */
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+
+   
+}
+
+.addnt{
+    /*background-color: rgb(18, 65, 116);*/
+    background-color: rgb(122, 124, 133);
+    font-size: 18px; 
+    /* border-radius: 30px; */
+    border-radius:30px 0px 0px 30px;
+    width: 100px;
+    height: 44px;
+    border: none;
+
+    /* transform: translate(12vw,-2.65vw); */
+    /* transform: translate(180px,-41px); */
+}
+span{
+    color:white;
+    font-size: 50px;
+}
+/* below class is for fieldset */
+form{
+
+    /* float: left; */
+    /* width: 400px; */
+    width: 80vw;
+    height: 338.5px;
+    /*height: 80vw;*/
+    /* max-width: 400px; */
+    margin: 40px;
+    /* border:3px outset rgb(9, 199, 252); */
+    background-color: rgb(175, 173, 173);
+    /* padding-left: 50px; */
+    display: inline-block;
+    padding: 1px;
+    
+}
+/* below class is for buttons that are present inside fieldset */
+/* faced a problem that both input and save buttons are not aligned same way in vertical direction even 
+height is same because of the fontsize of the text in it. So it when fontsize is written in both the areas then it is working fine
+before font size is written only for input and not for buttons*/
+.btnnote{
+    height: 26px;
+    /* background-color:rgb(35, 40, 46); */
+    /* border:  rgb(11, 48, 121); */
+    color: rgb(27, 27, 27);
+    font-size: 15px;
+    /* float: right; */
+    /* margin: none; */
+    margin: 2px;
+
+}
+/* below class is for the input element present inside fieldset  */
+.inptxtarea{
+    background-color: rgb(35, 40, 46);
+    /* width: 328px; */
+    width: 150px;
+    height:24px; 
+    float: left;
+    margin: 2px;
+    text-align:center; 
+    color:white;
+    font-size: 17px;
+    border:rgb(11, 48, 121);
+    
+
+}
+
+/* below class is for text area boxes in fieldset */
+textarea{
+/* resize: none; */
+resize: none;
+
+/* width: 395px; */
+width: 79.56vw;
+/*background-color: rgb(206, 200, 200);*/
+background-color: rgb(224, 224, 224);
+height: 300px;
+font-size: 16px;
+margin-left: 1px;
+margin-right: 1px;
+border:none;
+}  
+/* This class is used for select Textcolour change and Background colour change */
+.bgclr{
+    font-size: 17px;
+    background-color: white;
+    /* width: 26px; */
+    height: 26px;
+    margin: 2px;
+    float: middle;
+}
+/* This class is used for adjusting the input colour field to the buttons  */
+.clrbtn{
+    width: 26px;
+    height: 26px;
+    /* border: black; */
+
+    /* border-radius: 20px; */
+    float: middle;
+    background-color:black;
+    /* opacity makes the button invisible you can refer notepad1.html to see how it works */
+    opacity: 0;        
+    /* position:absolute is very importent as we are linking button to inputfield of type colour using this position button 
+    so when we write this the button will come under input field of type color and as input field is invisible it creates 
+    illusion that we are clicking the button and changing the colour */
+    position: absolute;
+    
+}
+input::-webkit-color-swatch {
+    border: none;
+}
+
+
+
+hr{
+    color: black;
+    margin: 0;
+}
+
+header{
+    /*background-color: rgb(50, 42, 42);*/
+    background-color: rgb(35, 40, 46);
+    height: 70px;
+}
+
+.list_btn{
+    /*color:rgb(122, 124, 133);*/
+    color: white;
+    background-color:  rgb(35, 40, 46);
+    width:180px ;
+    /*margin-right: 10px;*/
+    font-size: 15px;
+    text-align: left;
+   
+}
+
+.list_div{
+/*background-color: rgb(20, 8, 38);*/
+/*text-align: center;*/
+width: 150px;
+/*height: 13vw;*/
+margin-top: 72px;
+float: right;
+}
+
+.center {
+  /*display: inline-block;*/
+  margin: 0;
+  position: absolute;
+
+  left: 40%;
+*//*  -ms-transform: translate(-35%, -35%);
+  transform: translate(-30%, -30%);
+}
