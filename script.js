@@ -162,7 +162,7 @@ function load_fun(key,htmlid)
     x+='<button type="button" class="btnnote" style="float:right;" onclick="saveme(\''+textareaname+'\');"><b>Save</b></button>';
     x+='<button type="button" class="btnnote" style="float:right;" onclick="delme(\''+textareaname+'\');"><abbr title="Delete"><b>X</b></abbr></button>'
     x+='<button id="'+minid+'" type="button" onclick="minimize(\''+textareaname+'\')" class="bgclr" style="float:right;"><abbr title="Minimize"><b>-</b></abbr></button>';
-    x+='<br><hr><textarea id="'+txt_area_id+'"></textarea></form>';
+    x+='<br><textarea id="'+txt_area_id+'"></textarea></form>';
 
     // x+='<button class="xmark" type="button" id="" onclick=delme("'+textareaname+'")>x</button></fieldset>';
 
@@ -234,7 +234,7 @@ function addjq(htmlid,inputid)
     x+='<button type="button" class="btnnote" style="float:right;" onclick="saveme(\''+textareaname+'\');"><b>Save</b></button>';
     x+='<button type="button" class="btnnote" style="float:right;" onclick="delme(\''+textareaname+'\');"><abbr title="Delete"><b>X</b></abbr></button>'
     x+='<button id="'+minid+'" type="button" onclick="minimize(\''+textareaname+'\')" class="bgclr" style="float:right;"><abbr title="Minimize"><b>-</b></abbr></button>';
-    x+='<br><hr><textarea id="'+txt_area_id+'"></textarea></form>';
+    x+='<br><textarea id="'+txt_area_id+'"></textarea></form>';
 
     // x+='<button class="xmark" type="button" id="" onclick=delme("'+textareaname+'")>x</button></fieldset>';
 
