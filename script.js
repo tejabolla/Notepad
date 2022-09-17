@@ -189,6 +189,7 @@ function load_fun(key,htmlid)
 function addjq(htmlid,inputid)
 {
     var textareaname= document.getElementById(inputid).value;
+    textareaname=textareaname.replace(/\s+/g, ' ').trim();
     if(textareaname.length==0)
     {
         alert('Hey title of note is empty');
