@@ -80,6 +80,7 @@ function boldtog(textareaname)
 function addnoteloc(key,htmlid,notenum){
     var val=localStorage.getItem(key);
     var textareaname= key;
+    var textareatitle=textareaname.replace(/!/g, ' ');
     var scwid=screen.width;
     var inpid=textareaname+'inp';
     var txt_area_id=textareaname+'txtar';
@@ -93,7 +94,7 @@ function addnoteloc(key,htmlid,notenum){
 
 
     var x=  '<form id="'+textareaname+'" >';
-    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareaname+'">';
+    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareatitle+'">';
     // x+='<legend>'+textareaname+'</legend>';
     // alert(screen.width)
     //prevented extra line after div tag by adding inline-block
@@ -147,6 +148,7 @@ function load_fun(key,htmlid)
     var val=localStorage.getItem(key)
     console.log(no_notes)
     var textareaname= key;
+    var textareatitle=textareaname.replace(/!/g, ' ');
     var scwid=screen.width;
     var inpid=textareaname+'inp';
     var txt_area_id=textareaname+'txtar';
@@ -159,7 +161,7 @@ function load_fun(key,htmlid)
     var minid=textareaname+'min';
 
     var x=  '<form id="'+textareaname+'" >';
-    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareaname+'">';
+    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareatitle+'">';
     // x+='<legend>'+textareaname+'</legend>';
     x+='<div class="center"><select id="'+selid+'" class="btnnote" style="margin:auto" onchange="changefont(\''+textareaname+'\')"; >'+fontselect+'</select>';
     x+='<input id="'+colortxt+'" type="color" class="clrbtn" oninput="changetxtcolor(\''+txt_area_id+'\')" /><button id="'+txtclrbtn+'" class="bgclr"><b>A</b></button>';
@@ -189,7 +191,9 @@ function load_fun(key,htmlid)
 function addjq(htmlid,inputid)
 {
     var textareaname= document.getElementById(inputid).value;
-    textareaname=textareaname.replace(/\s+/g, ' ').trim();
+    var textareatitle=textareaname;
+    textareaname=textareaname.replace(/ /g, '!');
+    
     if(textareaname.length==0)
     {
         alert('Hey title of note is empty');
@@ -232,7 +236,7 @@ function addjq(htmlid,inputid)
     var minid=textareaname+'min';
 
     var x=  '<form id="'+textareaname+'" >';
-    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareaname+'">';
+    x+=' <input class="inptxtarea" disabled="disabled" type="text" id="'+inpid+'" placeholder="enter the input" value="'+textareatitle+'">';
     // x+='<legend>'+textareaname+'</legend>';
     x+='<div class="center"><select id="'+selid+'" class="btnnote" style="margin:auto" onchange="changefont(\''+textareaname+'\')"; >'+fontselect+'</select>';
     x+='<input id="'+colortxt+'" type="color" class="clrbtn" oninput="changetxtcolor(\''+txt_area_id+'\')" /><button id="'+txtclrbtn+'" class="bgclr"><b>A</b></button>';
