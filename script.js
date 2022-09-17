@@ -78,7 +78,7 @@ function boldtog(textareaname)
 
 
 function addnoteloc(key,htmlid,notenum){
-    var val=localStorage.getItem(key)
+    var val=localStorage.getItem(key);
     var textareaname= key;
     var scwid=screen.width;
     var inpid=textareaname+'inp';
@@ -292,7 +292,7 @@ function delme(mytextareaname)
     // alert(name.value);
     no_notes-=1;
     localStorage.removeItem(mytextareaname);
-    remove(note_lst,mytextareaname)
+    note_lst=remove(note_lst,mytextareaname);
     name='#'+mytextareaname;
     // alert(name)
     jQuery(name).remove();
